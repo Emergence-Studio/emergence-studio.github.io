@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-emergence w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Emergence<br>Studio</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Philosophy</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-emergence w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-emergence w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Emergence Studio</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Create Your Emergent Language.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-emergence"><b>Our Philosophy.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Coordinating teams within organizations is time consuming, clumsy, and often riddled with challenges that directly prevent teams from coorperating with one another. This could be because of misaligned incentives, goals, metrics, or responsibilities. Just getting the right stakeholders into the room is hard enough <i>(and only the first step in teamwork)</i>. Aligning resources, objectives, and execution is yet another (time consuming) step that causes them to <b>negotiate</b> instead of letting them focus on just <b>doing</b>.</p>
+    <p>Our solutions leverage integrative thinking and scalable solutions to create services that deliver a common language for teams to use both internally and with customers.</p>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-emergence"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>
+      Leveraging data is a key part of any emergent transformation. Our processes turn data into information, and our solutions are made repeatable so that the flow of information to customers and the rest of your company never stops.
+    </p>
+    <p>
+      Below you'll find a brief explanation of the two kinds of services we currently offer.
+    </p>
+  </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-emergence w3-xlarge w3-padding-32">Emergent Capability Building</li>
+          <li class="w3-padding-16"><b>Proofpoint Creation</b></li>
+          <li class="w3-padding-16">A repeatable process that your team can execute and adapt for any customer, and whose outcome can be repurposed across marketing, operations, customer success, and product. From this process, define the set of <b>proofpoints</b> that will drive more effective sales cycles, evaluations, and upsell/cross-sell conversations.</li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">I am interested to learn more</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-emergence w3-xlarge w3-padding-32">Emergent Value Attribution</li>
+          <li class="w3-padding-16"><b>Business Value Quantification</b></li>
+          <li class="w3-padding-16">Show how your company translates to long term value for your customer. Be leveraging the proofpoints from the previously defined process, this solution creates a reproducible set of ROI assets that can be used to easily articulate to buyers why they need your company today.</li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">I am interested to learn more</button>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+  <!-- Team Section -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-emergence"><b>Team.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+  </div>
+
+  <div class="w3-col-padding">
+    <div class="w3-margin-bottom">
+      <div class="w3-col  w3-margin-bottom">
+        <div class="w3-light-grey">
+          <div class="w3-container" style="width: 100%;">
+            <div style="width: 30%; height: 300px; float: left;">
+                <img src="animated-jameson.png" alt="Jameson" style="width:100%">
+            </div>
+            <div style="margin-left: 30%; height: 300px;">
+              <h3>Jameson Lee</h3>
+              <p class="w3-opacity">Founder</p>
+              <p>Jameson is the founder of Emergence Studio who started the company because of the value he saw created through small (but mighty) data science teams, and the pain experienced by  companies that could not benefit quickly enough from their learnings. He currently supports PredictHQ, leading their Data Science Solution Engineering team. Previous to PredictHQ, he worked at Acubed (the R&D Innovation Center for Airbus), Medallia, and Goldman Sachs. In his spare time, Jameson enjoys reading about tools for thought, organizing board games, and exercising.</p>
+              <p>You can find him on twitter at <a href="https://twitter.com/mimoemergence">@mimoemergence</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<p>
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-emergence"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Interested in chatting the details of your own emergent transformation? Reach out to schedule a chat.</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-emergence w3-margin-bottom">Send Message</button>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+  <div><i class="fab fa-twitter"></i></div>
+  <div></div>
+  <div></div>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
