@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import Image from 'next/image'
 
 interface SidebarProps {
   activeTab: string
@@ -12,11 +11,9 @@ const Sidebar: FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
   return (
     <aside className="w-64 bg-purple-800 p-6">
       <div className="flex items-center gap-2 mb-8">
-        <Image
+        <img
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hibiscus-PNG-Images-HD-zlJaSRwlJlC8G7zvnWWqd0om1p5Ufv.png"
           alt="Emergence Studio Logo"
-          width={32}
-          height={32}
           className="w-8 h-8"
         />
         <h1 className="text-2xl font-bold">Emergence Studio</h1>
